@@ -1,4 +1,4 @@
-MarketplaceSchema = GraphQL::Schema.define do
+ShopifyChallengeSchema = GraphQL::Schema.define do
   mutation(Types::MutationType)
   query(Types::QueryType)
 end
