@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4839be4-e045-49a3-b3ec-f27b7278c450" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/graphql/resolvers/create_product.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/graphql/resolvers/get_all_products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/graphql/resolvers/get_product.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/graphql/resolvers/create_product_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/graphql/resolvers/get_product_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shopify-challenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shopify-challenge.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graphql/types/mutation_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/mutation_type.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graphql/types/product_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/product_type.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/graphql/types/query_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/graphql/types/query_type.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/test.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/links.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/products.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/products.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/link_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/graphql/resolvers/get_all_products_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/graphql/resolvers/get_all_products_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/pids/server.pid" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +15,11 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/shopify_challenge@test_creating_a_new_product_with_valid_args__shopify_challenge.rcov" NAME="test_creating_a_new_product_with_valid_args: shopify-challenge Coverage Results" MODIFIED="1548009469904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify-challenge" />
+    <SUITE FILE_PATH="coverage/shopify_challenge@test_getting_all_products_without_argument__shopify_challenge.rcov" NAME="test_getting_all_products_without_argument: shopify-challenge Coverage Results" MODIFIED="1548015694390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify-challenge" />
     <SUITE FILE_PATH="coverage/shopify_challenge@test_creating_a_new_product_with_invalid_title__shopify_challenge.rcov" NAME="test_creating_a_new_product_with_invalid_title: shopify-challenge Coverage Results" MODIFIED="1547493909785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify-challenge" />
     <SUITE FILE_PATH="coverage/shopify_challenge@Run_test__Resolvers__GetProductTest___shopify_challenge.rcov" NAME="Run test 'Resolvers::GetProductTest': shopify-challenge Coverage Results" MODIFIED="1547496056156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify-challenge" />
     <SUITE FILE_PATH="coverage/shopify_challenge@test_creating_a_new_product_with_missing_price__shopify_challenge.rcov" NAME="test_creating_a_new_product_with_missing_price: shopify-challenge Coverage Results" MODIFIED="1547494584199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify-challenge" />
+    <SUITE FILE_PATH="coverage/shopify_challenge@test_getting_all_products_with_in_stock_equal_to_true__shopify_challenge.rcov" NAME="test_getting_all_products_with_in_stock_equal_to_true: shopify-challenge Coverage Results" MODIFIED="1548015750213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify-challenge" />
     <SUITE FILE_PATH="coverage/shopify_challenge@test_getting_one_product_from_name__shopify_challenge.rcov" NAME="test_getting_one_product_from_name: shopify-challenge Coverage Results" MODIFIED="1547495876239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="shopify-challenge" />
   </component>
   <component name="DatabaseView">
@@ -82,7 +65,7 @@
           <entry key="log" value="2" />
           <entry key="md" value="1" />
           <entry key="pid" value="1" />
-          <entry key="rb" value="23" />
+          <entry key="rb" value="24" />
           <entry key="ru" value="1" />
           <entry key="yml" value="1" />
         </counts>
@@ -92,7 +75,7 @@
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Ruby" value="30" />
+          <entry key="Ruby" value="31" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -102,7 +85,7 @@
           <entry key="create_product" value="113" />
           <entry key="json" value="27" />
           <entry key="lock" value="5" />
-          <entry key="rb" value="1841" />
+          <entry key="rb" value="1950" />
           <entry key="yml" value="23" />
         </counts>
       </usages-collector>
@@ -110,7 +93,7 @@
         <counts>
           <entry key="JSON" value="27" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Ruby" value="1958" />
+          <entry key="Ruby" value="2067" />
           <entry key="YAML" value="23" />
         </counts>
       </usages-collector>
@@ -139,8 +122,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/graphql/resolvers/get_product_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/graphql/resolvers/get_all_products_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -163,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/graphql/resolvers/get_all_products.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -232,6 +224,7 @@
         <option value="$PROJECT_DIR$/app/graphql/resolvers/get_product.rb" />
         <option value="$PROJECT_DIR$/app/graphql/types/query_type.rb" />
         <option value="$PROJECT_DIR$/app/graphql/resolvers/get_all_products.rb" />
+        <option value="$PROJECT_DIR$/test/graphql/resolvers/get_all_products_test.rb" />
       </list>
     </option>
   </component>
@@ -277,6 +270,12 @@
               <item name="shopify-challenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopify-challenge" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopify-challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopify-challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="graphql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -313,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_creating_a_new_product_with_valid_args: shopify-challenge">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_getting_all_products_with_in_stock_equal_to_true: shopify-challenge">
     <configuration name="Run test 'Resolvers::GetProductTest': shopify-challenge" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="shopify-challenge" />
@@ -343,64 +342,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_creating_a_new_product_with_invalid_title: shopify-challenge" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="shopify-challenge" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/graphql/resolvers/create_product_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_creating_a_new_product_with_invalid_title" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_creating_a_new_product_with_missing_price: shopify-challenge" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="shopify-challenge" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/graphql/resolvers/create_product_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_creating_a_new_product_with_missing_price" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_creating_a_new_product_with_valid_args: shopify-challenge" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="shopify-challenge" />
@@ -423,6 +364,64 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/graphql/resolvers/create_product_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_creating_a_new_product_with_valid_args" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_getting_all_products_with_in_stock_equal_to_true: shopify-challenge" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="shopify-challenge" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/graphql/resolvers/get_all_products_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_getting_all_products_with_in_stock_equal_to_true" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_getting_all_products_without_argument: shopify-challenge" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="shopify-challenge" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/graphql/resolvers/get_all_products_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_getting_all_products_without_argument" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -461,18 +460,18 @@
     </configuration>
     <list>
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_creating_a_new_product_with_valid_args: shopify-challenge" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_creating_a_new_product_with_invalid_title: shopify-challenge" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_creating_a_new_product_with_missing_price: shopify-challenge" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_getting_one_product_from_name: shopify-challenge" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'Resolvers::GetProductTest': shopify-challenge" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_getting_all_products_without_argument: shopify-challenge" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_getting_all_products_with_in_stock_equal_to_true: shopify-challenge" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_getting_all_products_with_in_stock_equal_to_true: shopify-challenge" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_getting_all_products_without_argument: shopify-challenge" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_creating_a_new_product_with_valid_args: shopify-challenge" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'Resolvers::GetProductTest': shopify-challenge" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_getting_one_product_from_name: shopify-challenge" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_creating_a_new_product_with_missing_price: shopify-challenge" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_creating_a_new_product_with_invalid_title: shopify-challenge" />
       </list>
     </recent_temporary>
   </component>
@@ -489,17 +488,11 @@
       <updated>1547326119901</updated>
       <workItem from="1547326121342" duration="454000" />
       <workItem from="1547327568385" duration="9987000" />
-      <workItem from="1548009459189" duration="2241000" />
+      <workItem from="1548009459189" duration="2996000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_getting_one_product_from_name__shopify-challenge - 2019.01.14 at 14h 57m 06s.xml">
-      <configuration name="test_getting_one_product_from_name: shopify-challenge" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_getting_one_product_from_name__shopify-challenge - 2019.01.14 at 14h 57m 13s.xml">
-      <configuration name="test_getting_one_product_from_name: shopify-challenge" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_getting_one_product_from_name__shopify-challenge - 2019.01.14 at 14h 57m 42s.xml">
       <configuration name="test_getting_one_product_from_name: shopify-challenge" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
@@ -524,9 +517,15 @@
     <history-entry file="test_creating_a_new_product_with_valid_args__shopify-challenge - 2019.01.20 at 13h 37m 51s.xml">
       <configuration name="test_creating_a_new_product_with_valid_args: shopify-challenge" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_getting_all_products_without_argument__shopify-challenge - 2019.01.20 at 15h 21m 35s.xml">
+      <configuration name="test_getting_all_products_without_argument: shopify-challenge" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_getting_all_products_with_in_stock_equal_to_true__shopify-challenge - 2019.01.20 at 15h 22m 31s.xml">
+      <configuration name="test_getting_all_products_with_in_stock_equal_to_true: shopify-challenge" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12682000" />
+    <option name="totallyTimeSpent" value="13437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,7 +545,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299285" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993895" weight="0.3299285" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993895" visible="true" weight="0.3299285" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -554,7 +553,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299285" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" visible="true" weight="0.3299285" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.3299285" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.3299285" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3299285" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -689,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/products.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/graphql/resolvers/create_product.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -717,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/graphql/resolvers/get_product_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/graphql/resolvers/get_product.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -733,8 +718,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/graphql/resolvers/get_all_products.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="240">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graphql/resolvers/get_product_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/products.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graphql/resolvers/get_all_products_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
