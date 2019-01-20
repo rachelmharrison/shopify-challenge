@@ -2044,3 +2044,284 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 3.7ms)
 
 
+Started POST "/graphql" for ::1 at 2019-01-20 16:14:12 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/rachelharrison/.gem/ruby/2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\tcreateCart(name: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\tcreateCart(name: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil}}
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (You need to supply at least one validation):
+  
+app/models/cart.rb:6:in `<class:Cart>'
+app/models/cart.rb:1:in `<main>'
+app/graphql/resolvers/create_cart.rb:7:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:14:58 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\tcreateCart(name: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\tcreateCart(name: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_cart.rb:7
+  [1m[36mCart Create (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("total_price", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?)[0m  [["total_price", 0.0], ["created_at", "2019-01-20 21:14:58.738956"], ["updated_at", "2019-01-20 21:14:58.738956"], ["name", "Rachel's Cart"]]
+  ↳ app/graphql/resolvers/create_cart.rb:7
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/create_cart.rb:7
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:15:25 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(name: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(name: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:15:34 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(product_title: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(product_title: \"Rachel's Cart\") {\n    name\n  }\n}\n\n\n", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:16:35 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# mutation{\n# \taddProductToCart(product_title: \"Rachel's Cart\") {\n#     name\n#   }\n# }\n\n{\n  createProduct(title: 'Apple', price: 1.23, inventory_count: 1) {\n    title\n  }\n}\n\n\n", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"# mutation{\n# \taddProductToCart(product_title: \"Rachel's Cart\") {\n#     name\n#   }\n# }\n\n{\n  createProduct(title: 'Apple', price: 1.23, inventory_count: 1) {\n    title\n  }\n}\n\n\n", "variables"=>nil, "operationName"=>nil}}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:16:55 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# mutation{\n# \taddProductToCart(product_title: \"Rachel's Cart\") {\n#     name\n#   }\n# }\n\nmutation{\n  createProduct(title: 'Apple', price: 1.23, inventory_count: 1) {\n    title\n  }\n}\n\n\n", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"# mutation{\n# \taddProductToCart(product_title: \"Rachel's Cart\") {\n#     name\n#   }\n# }\n\nmutation{\n  createProduct(title: 'Apple', price: 1.23, inventory_count: 1) {\n    title\n  }\n}\n\n\n", "variables"=>nil, "operationName"=>nil}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:17:04 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"# mutation{\n# \taddProductToCart(product_title: \"Rachel's Cart\") {\n#     name\n#   }\n# }\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n    title\n  }\n}\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"# mutation{\n# \taddProductToCart(product_title: \"Rachel's Cart\") {\n#     name\n#   }\n# }\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n    title\n  }\n}\n\n\n", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "inventory_count", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Apple"], ["price", 1.23], ["inventory_count", 1.0], ["created_at", "2019-01-20 21:17:04.373631"], ["updated_at", "2019-01-20 21:17:04.373631"]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:17:18 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(product_title: \"Rachel's Cart\", name: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(product_title: \"Rachel's Cart\", name: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:17:30 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_name: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_name: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:17:36 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `title' for #<Resolvers::AddProductToCart:0x00007f9a11059b70>):
+  
+app/graphql/resolvers/add_product_to_cart.rb:8:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:17:49 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `title' for #<Resolvers::AddProductToCart:0x00007f9a11059b70>):
+  
+app/graphql/resolvers/add_product_to_cart.rb:8:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:18:04 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:8
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `first' for #<Product:0x00007f9a11031b20>):
+  
+app/graphql/resolvers/add_product_to_cart.rb:8:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:18:11 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:8
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `addProduct' for #<Class:0x00007f9a0af10580>):
+  
+app/graphql/resolvers/add_product_to_cart.rb:12:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:18:52 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:8
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."name" = ? LIMIT ?[0m  [["name", "Rachel's Cart"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:12
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `addProduct' for #<Cart:0x00007f9a0c779f18>
+Did you mean?  add_product):
+  
+app/graphql/resolvers/add_product_to_cart.rb:13:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:18:59 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:8
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."name" = ? LIMIT ?[0m  [["name", "Rachel's Cart"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:12
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."cart_id" = ? LIMIT ?[0m  [["cart_id", 1], ["LIMIT", 11]]
+  ↳ /Users/rachelharrison/.rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.6ms)
+
+
+  
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."cart_id" = ? LIMIT ?[0m  [["cart_id", 1], ["LIMIT", 11]]
+  ↳ /Users/rachelharrison/.rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `add' for #<Product::ActiveRecord_Associations_CollectionProxy:0x00007f9a0b082e68>):
+  
+app/models/cart.rb:9:in `add_product'
+app/graphql/resolvers/add_product_to_cart.rb:13:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:21:00 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil, "graphql"=>{"query"=>"mutation{\n\taddProductToCart(cart_name: \"Rachel's Cart\", product_title: \"Apple\") {\n    name\n  }\n}\n\n# mutation{\n#   createProduct(title: \"Apple\", price: 1.23, inventory_count: 1) {\n#     title\n#   }\n# }\n\n\n", "variables"=>nil}}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:8
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."name" = ? LIMIT ?[0m  [["name", "Rachel's Cart"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/add_product_to_cart.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/cart.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/cart.rb:9
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.9ms)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `cart_id`):
+  
+app/models/cart.rb:9:in `add_product'
+app/graphql/resolvers/add_product_to_cart.rb:13:in `call'
+app/controllers/graphql_controller.rb:10:in `execute'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "carts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "carts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "total_price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "products"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "price" decimal, "inventory_count" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190120210125)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190112213805);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-20 21:27:23.234583"], ["updated_at", "2019-01-20 21:27:23.234583"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "carts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "carts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "total_price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "products"[0m
+  ↳ db/schema.rb:22
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "price" decimal, "inventory_count" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:22
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190120210125)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190112213805);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-20 21:27:23.256179"], ["updated_at", "2019-01-20 21:27:23.256179"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-01-20 21:27:23.259409"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9

@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_01_20_210125) do
 
-  create_table "carts", force: :cascade do |t|
-    t.decimal "total_price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "name"
-  end
-
   create_table "products", force: :cascade do |t|
     t.string "title"
     t.decimal "price"
