@@ -2325,3 +2325,257 @@ app/controllers/graphql_controller.rb:10:in `execute'
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/graphiql" for ::1 at 2019-01-20 16:28:00 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/rachelharrison/.gem/ruby/2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/rachelharrison/.gem/ruby/2.5.3/gems/graphiql-rails-1.4.4/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rachelharrison/.gem/ruby/2.5.3/gems/graphiql-rails-1.4.4/app/views/graphiql/rails/editors/show.html.erb (268.2ms)
+Completed 200 OK in 283ms (Views: 278.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:28:00 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n  query IntrospectionQuery {\n    __schema {\n      queryType { name }\n      mutationType { name }\n      subscriptionType { name }\n      types {\n        ...FullType\n      }\n      directives {\n        name\n        description\n        locations\n        args {\n          ...InputValue\n        }\n      }\n    }\n  }\n\n  fragment FullType on __Type {\n    kind\n    name\n    description\n    fields(includeDeprecated: true) {\n      name\n      description\n      args {\n        ...InputValue\n      }\n      type {\n        ...TypeRef\n      }\n      isDeprecated\n      deprecationReason\n    }\n    inputFields {\n      ...InputValue\n    }\n    interfaces {\n      ...TypeRef\n    }\n    enumValues(includeDeprecated: true) {\n      name\n      description\n      isDeprecated\n      deprecationReason\n    }\n    possibleTypes {\n      ...TypeRef\n    }\n  }\n\n  fragment InputValue on __InputValue {\n    name\n    description\n    type { ...TypeRef }\n    defaultValue\n  }\n\n  fragment TypeRef on __Type {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n", "graphql"=>{"query"=>"\n  query IntrospectionQuery {\n    __schema {\n      queryType { name }\n      mutationType { name }\n      subscriptionType { name }\n      types {\n        ...FullType\n      }\n      directives {\n        name\n        description\n        locations\n        args {\n          ...InputValue\n        }\n      }\n    }\n  }\n\n  fragment FullType on __Type {\n    kind\n    name\n    description\n    fields(includeDeprecated: true) {\n      name\n      description\n      args {\n        ...InputValue\n      }\n      type {\n        ...TypeRef\n      }\n      isDeprecated\n      deprecationReason\n    }\n    inputFields {\n      ...InputValue\n    }\n    interfaces {\n      ...TypeRef\n    }\n    enumValues(includeDeprecated: true) {\n      name\n      description\n      isDeprecated\n      deprecationReason\n    }\n    possibleTypes {\n      ...TypeRef\n    }\n  }\n\n  fragment InputValue on __InputValue {\n    name\n    description\n    type { ...TypeRef }\n    defaultValue\n  }\n\n  fragment TypeRef on __Type {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n"}}
+Completed 200 OK in 37ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/graphiql" for ::1 at 2019-01-20 16:51:07 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/rachelharrison/.gem/ruby/2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /Users/rachelharrison/.gem/ruby/2.5.3/gems/graphiql-rails-1.4.4/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/rachelharrison/.gem/ruby/2.5.3/gems/graphiql-rails-1.4.4/app/views/graphiql/rails/editors/show.html.erb (244.4ms)
+Completed 200 OK in 269ms (Views: 257.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:51:08 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n  query IntrospectionQuery {\n    __schema {\n      queryType { name }\n      mutationType { name }\n      subscriptionType { name }\n      types {\n        ...FullType\n      }\n      directives {\n        name\n        description\n        locations\n        args {\n          ...InputValue\n        }\n      }\n    }\n  }\n\n  fragment FullType on __Type {\n    kind\n    name\n    description\n    fields(includeDeprecated: true) {\n      name\n      description\n      args {\n        ...InputValue\n      }\n      type {\n        ...TypeRef\n      }\n      isDeprecated\n      deprecationReason\n    }\n    inputFields {\n      ...InputValue\n    }\n    interfaces {\n      ...TypeRef\n    }\n    enumValues(includeDeprecated: true) {\n      name\n      description\n      isDeprecated\n      deprecationReason\n    }\n    possibleTypes {\n      ...TypeRef\n    }\n  }\n\n  fragment InputValue on __InputValue {\n    name\n    description\n    type { ...TypeRef }\n    defaultValue\n  }\n\n  fragment TypeRef on __Type {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n", "graphql"=>{"query"=>"\n  query IntrospectionQuery {\n    __schema {\n      queryType { name }\n      mutationType { name }\n      subscriptionType { name }\n      types {\n        ...FullType\n      }\n      directives {\n        name\n        description\n        locations\n        args {\n          ...InputValue\n        }\n      }\n    }\n  }\n\n  fragment FullType on __Type {\n    kind\n    name\n    description\n    fields(includeDeprecated: true) {\n      name\n      description\n      args {\n        ...InputValue\n      }\n      type {\n        ...TypeRef\n      }\n      isDeprecated\n      deprecationReason\n    }\n    inputFields {\n      ...InputValue\n    }\n    interfaces {\n      ...TypeRef\n    }\n    enumValues(includeDeprecated: true) {\n      name\n      description\n      isDeprecated\n      deprecationReason\n    }\n    possibleTypes {\n      ...TypeRef\n    }\n  }\n\n  fragment InputValue on __InputValue {\n    name\n    description\n    type { ...TypeRef }\n    defaultValue\n  }\n\n  fragment TypeRef on __Type {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n"}}
+Completed 200 OK in 41ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:51:35 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\n{\n  allProducts {\n    title\n  }\n}", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"\n\n{\n  allProducts {\n    title\n  }\n}", "variables"=>nil, "operationName"=>nil}}
+  [1m[36mProduct Load (5.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/graphql_controller.rb:10
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:52:06 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:52:29 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.2, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.2, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:52:36 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.26, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.26, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Create (2.6ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "inventory_count", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Apple"], ["price", 1.26], ["inventory_count", 3.0], ["created_at", "2019-01-20 21:52:36.806717"], ["updated_at", "2019-01-20 21:52:36.806717"]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:55:09 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.26, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple\", price: 1.26, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:55:14 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple2\", price: 1.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple2\", price: 1.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple2"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "inventory_count", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Apple2"], ["price", 1.2], ["inventory_count", 3.0], ["created_at", "2019-01-20 21:55:14.547255"], ["updated_at", "2019-01-20 21:55:14.547255"]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:55:23 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple3\", price: 9999999.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple3\", price: 9999999.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple3"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:56:44 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple3\", price: 9999999.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple3\", price: 9999999.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple3"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "inventory_count", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Apple3"], ["price", 9999999.2], ["inventory_count", 3.0], ["created_at", "2019-01-20 21:56:44.745269"], ["updated_at", "2019-01-20 21:56:44.745269"]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:56:52 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple4\", price: 999999999999.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple4\", price: 999999999999.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:56:57 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  createProduct(title: \"Apple4\", price: 1.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  createProduct(title: \"Apple4\", price: 1.20, inventory_count: 3) {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "inventory_count", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Apple4"], ["price", 1.2], ["inventory_count", 3.0], ["created_at", "2019-01-20 21:56:57.795761"], ["updated_at", "2019-01-20 21:56:57.795761"]]
+  ↳ app/graphql/resolvers/create_product.rb:9
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/create_product.rb:9
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:57:08 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/purchase_product.rb:24
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? AND "products"."id" != ? LIMIT ?[0m  [["title", "Apple4"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:24
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "inventory_count" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["inventory_count", 2.0], ["updated_at", "2019-01-20 21:57:08.689393"], ["id", 4]]
+  ↳ app/graphql/resolvers/purchase_product.rb:24
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/purchase_product.rb:24
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 7.2ms)
+
+
+  
+NoMethodError (undefined method `title' for true:TrueClass):
+  
+app/controllers/graphql_controller.rb:10:in `execute'
+Started POST "/graphql" for ::1 at 2019-01-20 16:57:46 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? AND "products"."id" != ? LIMIT ?[0m  [["title", "Apple4"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE "products" SET "inventory_count" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["inventory_count", 1.0], ["updated_at", "2019-01-20 21:57:46.103052"], ["id", 4]]
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+Completed 200 OK in 35ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:57:56 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\n{\n  getProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"\n\n{\n  getProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "operationName"=>nil}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:58:05 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\n{\n  oneProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"\n\n{\n  oneProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "operationName"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/get_product.rb:7
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:58:09 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\n{\n  oneProduct(title: \"Apple4\") {\n    title\n    inventory_count\n  }\n}", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"\n\n{\n  oneProduct(title: \"Apple4\") {\n    title\n    inventory_count\n  }\n}", "variables"=>nil, "operationName"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/get_product.rb:7
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:58:17 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? AND "products"."id" != ? LIMIT ?[0m  [["title", "Apple4"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "inventory_count" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["inventory_count", 0.0], ["updated_at", "2019-01-20 21:58:17.673491"], ["id", 4]]
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/graphql/resolvers/purchase_product.rb:17
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:58:28 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\n{\n  oneProduct(title: \"Apple4\") {\n    title\n    inventory_count\n  }\n}", "variables"=>nil, "operationName"=>nil, "graphql"=>{"query"=>"\n\n{\n  oneProduct(title: \"Apple4\") {\n    title\n    inventory_count\n  }\n}", "variables"=>nil, "operationName"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/get_product.rb:7
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:58:38 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple4\") {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple4"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:7
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/graphql" for ::1 at 2019-01-20 16:58:43 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple8\") {\n    title\n  }\n}", "variables"=>nil, "graphql"=>{"query"=>"\n\nmutation{\n  purchaseProduct(title: \"Apple8\") {\n    title\n  }\n}", "variables"=>nil}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "Apple8"], ["LIMIT", 1]]
+  ↳ app/graphql/resolvers/purchase_product.rb:7
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
