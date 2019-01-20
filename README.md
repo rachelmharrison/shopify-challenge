@@ -1,24 +1,56 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Rachel Harrison's solution to Shopify's Summer 2019 Backend Developer Intern Challenge Question.
 
-Things you may want to cover:
+It is implemented in Ruby on Rails with a GraphQL API. 
 
-* Ruby version
+To view the full API documentation please go here: 
 
-* System dependencies
+To view the reasoning and development process behing this project please go here:
 
-* Configuration
+## Ruby Version
 
-* Database creation
+This project uses ruby version 2.5.3.
+If necessary, you can download [here.](https://www.ruby-lang.org/en/downloads/)
 
-* Database initialization
+## Set up
 
-* How to run the test suite
+To install dependencies:
 
-* Services (job queues, cache servers, search engines, etc.)
+<code>gem install bundler</code>
 
-* Deployment instructions
+<code> gem install rails</code>
 
-* ...
+To clone this repo: 
+
+<code>git clone git@github.com:rachelmharrison/shopify-challenge.git</code>
+
+Finally:
+
+<code>cd shopify-challenge</code>  
+
+<code>bundle install</code>
+
+## Running the Application
+
+To create and reset the database:
+
+<code>rails db:setup</code>
+
+<code>rails db:reset</code>
+
+To start the server:
+
+<code>rails server</code>
+
+There is no front end for this project.
+To view the GraphiQL interface, naviagte to [http://localhost:3000/graphiql](http://localhost:3000/graphiql).
+
+
+## Testing 
+
+To run the unit test suite:
+
+<code>rails test</code>
+
+To test the functionallity of the API, start the server and naviagte to [http://localhost:3000/graphiql](http://localhost:3000/graphiql).
